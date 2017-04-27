@@ -1,0 +1,294 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DirectoryMonitor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DirectoryMonitor.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\20150616050401732_easyicon_net_32.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\20150616050327178_easyicon_net_32.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\20150616050334990_easyicon_net_32.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\20150616050339146_easyicon_net_32.ico"
+IDI_ICON6               ICON    DISCARDABLE     "res\\20150616050354996_easyicon_net_32.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 278, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 DirectoryMonitor"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "static",IDC_PRODUCTNAME,40,10,113,8,SS_NOPREFIX
+    LTEXT           "Static",IDC_COPYRIGHT,40,66,88,8
+    DEFPUSHBUTTON   "确定",IDOK,221,7,50,14,WS_GROUP
+    LTEXT           "Static",IDC_AUTHER,40,38,88,8
+    LTEXT           "Static",IDC_VERSION,39,24,88,8
+    LTEXT           "Static",IDC_COMPANY,40,52,88,8
+END
+
+IDD_DIRECTORYMONITOR_DIALOG DIALOGEX 0, 0, 307, 209
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "系统文件监控系统"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,15,280,106
+    EDITTEXT        IDC_EDIT1,7,124,279,14,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "",IDC_STATIC,7,7,287,134
+    CONTROL         "自动开始监控",IDC_AUTOMONITOR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,155,64,10
+    CONTROL         "程序开始时自动最小化",IDC_AUTOMIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,167,96,10
+    CONTROL         "系统启动时自动运行",IDC_AUTORUN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,179,88,10
+    CONTROL         "窗口显示在最前面",IDC_WINDOWS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,191,80,10
+    DEFPUSHBUTTON   "开始监控",IDC_BTN_START,125,157,50,14
+    PUSHBUTTON      "选择目录",IDC_BTN_SELECTDIR,184,157,50,14
+    PUSHBUTTON      "清空数据",IDC_BTN_CLEAR,243,157,50,14
+    PUSHBUTTON      "停止",IDC_BTN_STOP,125,181,50,14
+    PUSHBUTTON      "应用程序",IDC_BTN_APP,243,181,50,14
+    PUSHBUTTON      "选项",IDC_BTN_OPTIONS,184,181,50,14
+END
+
+IDD_DOPTIONS DIALOG DISCARDABLE  0, 0, 191, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "监控选项"
+FONT 10, "System"
+BEGIN
+    CONTROL         "删除文件",IDC_CHECK1_DEL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,19,48,10
+    CONTROL         "修改了文件",IDC_CHECK2_MODIFY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,37,56,10
+    CONTROL         "重命名文件",IDC_CHECK3_RENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,52,56,10
+    CONTROL         "修改文件属性",IDC_CHECK4_MDFATR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,51,71,64,10
+    CONTROL         "其他",IDC_CHECK5_OTHER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,86,32,10
+    PUSHBUTTON      "全选",IDC_BTN_SELECTALL,117,17,50,14
+    PUSHBUTTON      "全否",IDC_BTN_SELECTNO,117,37,50,14
+    PUSHBUTTON      "确定",IDC_BTN_OK,117,59,50,14
+    PUSHBUTTON      "取消",IDC_BTN_NO,117,78,50,14
+    GROUPBOX        "",IDC_STATIC,16,7,168,113
+    ICON            IDI_ICON2,IDC_STATIC,22,16,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,22,16,15,13
+    ICON            IDI_ICON3,IDC_STATIC,22,33,16,16
+    ICON            IDI_ICON4,IDC_STATIC,22,49,16,16
+    ICON            IDI_ICON5,IDC_STATIC,22,66,20,20
+    ICON            IDI_ICON6,IDC_STATIC,21,85,16,16
+END
+
+IDD_DMONITOR DIALOG DISCARDABLE  0, 0, 186, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "应用程序监控系统"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,122,114,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,164,101
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "程新强\0"
+            VALUE "CompanyName", "武汉轻工大学\0"
+            VALUE "FileDescription", "DirectoryMonitor Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DirectoryMonitor\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DirectoryMonitor.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "DirectoryMonitor 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DIRECTORYMONITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DMONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\Splash.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 DirectoryMonitor(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DirectoryMonitor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
